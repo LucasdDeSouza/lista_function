@@ -7,9 +7,25 @@
     */
 
     //Entrada
+    let palavra = prompt(`Informe a palavra desejada`).toUpperCase().trim();
+    const vogais = [`A`,"E","I","O","U"];
+    let vogais2 = []
 
 
     //Processamento
+    function i() {
+        for (const item of palavra){
+            for(const i of vogais){
+                if(item.includes(i)){
+                    vogais2.push(item)
+                }
+            }
+        }
+        return(vogais2.length)
+        
+    }
+    let vogal = i()
+    alert(`A palavra informada tem ${vogal} vogais`)
 
 
     //Saída

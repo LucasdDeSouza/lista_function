@@ -6,11 +6,19 @@
     */
 
     //Entrada
+    let p = Number(prompt(`Informe o seu peso`).replace(",","."))
+    let a = Number(prompt(`Informe a sua altura`).replace(",","."))
+    let IMC = 0
 
 
     //Processamento
+    function i(IMC) {
+        IMC = p / (a**2)
+        alert(`O seu IMC é ${IMC}`)
+    }
 
 
     //Saída
+    i(IMC)
 
 </script>

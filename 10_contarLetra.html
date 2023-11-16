@@ -6,11 +6,25 @@
     */
 
     //Entrada
+    let palavra = prompt(`Informe uma palavra`).toLowerCase()
+    let letra = prompt(`Informe a letra que deseja procurar`).toLowerCase()
 
 
     //Processamento
+    function i(palavra, letra) {
+        let ip = []
+        for (let id = 0; id < palavra.length; id++) {
+            const i = palavra[id];
+            if(i.includes(letra))
+            ip.push(i)
+            
+        }
+        document.write(`A letra indicada aparece ${ip.length} vezes`)
+        
+    }
 
 
     //Saída
+    i(palavra, letra)
 
 </script>

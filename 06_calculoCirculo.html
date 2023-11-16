@@ -8,11 +8,25 @@
     */
 
     //Entrada
+    let r = Number(prompt(`Informe o raio do círculo`))
+    const π = 3.14
+    let A = 0
+    let P = 0
 
 
     //Processamento
+    function i(A) {
+        A = π * (r ** 2)
+        alert(`A area do círculo = ${A}`)
+    }
+    function j(P) {
+        P = 2 * π * r
+        alert(`O perimetro do círculo = ${P}`)
+    }
 
 
     //Saída
+    i(A)
+    j(P)
 
 </script>
